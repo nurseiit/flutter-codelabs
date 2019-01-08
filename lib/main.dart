@@ -65,7 +65,9 @@ class ChatScreenState extends State<ChatScreen> {
         color: Theme.of(context).accentColor,
       ),
       child: new Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0,),
+        margin: const EdgeInsets.symmetric(
+          horizontal: 8.0,
+        ),
         child: new Row(children: <Widget>[
           new Flexible(
             child: new TextField(
