@@ -24,7 +24,9 @@ class ChatScreenState extends State<ChatScreen> {
   final TextEditingController _textController = new TextEditingController();
 
   void _handleSubmitted(String text) {
+    text = text.trim();
     _textController.clear();
+    if (text.isEmpty) return;
     ChatMessage message = new ChatMessage(
       text: text,
     );
