@@ -34,7 +34,7 @@ class PlanetRow extends StatelessWidget {
       height: 120.0,
       margin: const EdgeInsets.symmetric(
         vertical: 16.0,
-        horizontal: 24.0,
+        horizontal: 14.0,
       ),
       child: new Stack(
         children: <Widget>[

@@ -13,6 +13,6 @@ void main() {
   testWidgets('App loads without crashing', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(new App());
-    expect(find.text("Frooto"), findsOneWidget);
+    expect(find.text("frooto"), findsOneWidget);
   });
 }
