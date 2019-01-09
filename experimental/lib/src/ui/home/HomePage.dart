@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
         children: <Widget>[
           new GradientAppBar("frooto"),
           new HomePageBody(),
+          new HomePageBody(),
         ],
       ),
     );
