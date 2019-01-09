@@ -1,6 +1,18 @@
-# Flutter Example app from Google Codelabs
+# Flutter Example apps
+
+These are the apps from various tutorials and guides I found online. Some contain their own README.
 
 ## Running the app locally :smirk:
+
+You can follow these instructions to build the apps
+and install them onto your device.
+
+* _Note that some of the apps require different **flutter** channels to run properly (see in the corresponding README files)._
+
+## Prerequisites
+
+If you are new to Flutter, please first follow
+the [Flutter Setup](https://flutter.io/setup/) guide.
 
 ### Install tools
 

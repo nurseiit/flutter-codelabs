@@ -15,16 +15,11 @@ the [Flutter Setup](https://flutter.io/setup/) guide.
 
 ### Building and installing the Flutter app
 
-* `cd $FLUTTER_ROOT/examples/flutter_gallery`
+* `flutter channel dev` for it has some dependencies from the _dev_ branch.
 * `flutter upgrade`
 * `flutter run --release`
 
 The `flutter run --release` command both builds and installs the Flutter app.
-
-## Prerelease checklist
-
-* Verify that the About box's license page scrolls and reveals its long
-long stream of license texts.
 
 ## Icon
 
