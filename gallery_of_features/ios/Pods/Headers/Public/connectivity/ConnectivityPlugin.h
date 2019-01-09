@@ -1,0 +1,1 @@
+../../../../../../../../../Develop/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.3.2/ios/Classes/ConnectivityPlugin.h
