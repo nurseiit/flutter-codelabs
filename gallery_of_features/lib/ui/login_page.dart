@@ -433,7 +433,6 @@ class _LoginPageState extends State<LoginPage>
                     padding: const EdgeInsets.all(8.0),
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
-                      // color: Colors.amberAccent[200],
                       color: Colors.yellow[600],
                     ),
                     child: new Image(
