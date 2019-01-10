@@ -330,7 +330,9 @@ class _LoginPageState extends State<LoginPage>
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/home');
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                        '/home', (Route<dynamic> route) => false);
+                    // Navigator.of(context).pushNamed('/home');
                   },
                 ),
               ),
@@ -403,7 +405,10 @@ class _LoginPageState extends State<LoginPage>
               Padding(
                 padding: EdgeInsets.only(top: 10.0, right: 40.0),
                 child: GestureDetector(
-                  onTap: () => showInSnackBar("Facebook button pressed"),
+                  onTap: () {
+                    showInSnackBar("Facebook button pressed");
+                    // Navigator.pushNamed(context, '/');
+                  },
                   child: Container(
                     padding: const EdgeInsets.all(15.0),
                     decoration: new BoxDecoration(
@@ -420,7 +425,10 @@ class _LoginPageState extends State<LoginPage>
               Padding(
                 padding: EdgeInsets.only(top: 10.0),
                 child: GestureDetector(
-                  onTap: () => showInSnackBar("Kakao button pressed"),
+                  onTap: () {
+                    showInSnackBar("Kakao button pressed");
+                    // Navigator.pushNamed(context, '/');
+                  },
                   child: Container(
                     padding: const EdgeInsets.all(7.0),
                     decoration: new BoxDecoration(

@@ -118,9 +118,11 @@ class _GalleryAppState extends State<GalleryApp> {
       optionsPage: GalleryOptionsPage(
         options: _options,
         onOptionsChanged: _handleOptionsChanged,
-        onSendFeedback: widget.onSendFeedback ?? () {
-          launch('https://github.com/flutter/flutter/issues/new/choose', forceSafariVC: false);
-        },
+        onSendFeedback: widget.onSendFeedback ??
+            () {
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  '/login', (Route<dynamic> route) => false);
+            },
       ),
     );
 
@@ -139,7 +141,8 @@ class _GalleryAppState extends State<GalleryApp> {
         color: Colors.grey,
         showPerformanceOverlay: _options.showPerformanceOverlay,
         checkerboardOffscreenLayers: _options.showOffscreenLayersCheckerboard,
-        checkerboardRasterCacheImages: _options.showRasterCacheImagesCheckerboard,
+        checkerboardRasterCacheImages:
+            _options.showRasterCacheImagesCheckerboard,
         routes: _buildRoutes(),
         builder: (BuildContext context, Widget child) {
           return Directionality(
