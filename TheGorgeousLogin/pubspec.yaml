@@ -23,9 +23,9 @@ flutter:
   uses-material-design: true
 
   assets:
-      - assets/login_logo.png
-      - assets/kakao_icon.png
-      - assets/frooto_logo.png
+      - assets/img/login_logo.png
+      - assets/img/kakao_icon.png
+      - assets/img/frooto_logo.png
 
   fonts:
     - family: WorkSansSemiBold
