@@ -430,15 +430,15 @@ class _LoginPageState extends State<LoginPage>
                     // Navigator.pushNamed(context, '/');
                   },
                   child: Container(
-                    padding: const EdgeInsets.all(7.0),
+                    padding: const EdgeInsets.all(8.0),
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
-                      // color: Colors.white,
+                      // color: Colors.amberAccent[200],
                       color: Colors.yellow[600],
                     ),
                     child: new Image(
-                      width: 40.0,
-                      height: 40.0,
+                      width: 39.0,
+                      height: 39.0,
                       fit: BoxFit.fill,
                       image: new AssetImage('assets/img/kakao_icon.png'),
                     ),
