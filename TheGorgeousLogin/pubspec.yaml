@@ -24,6 +24,8 @@ flutter:
 
   assets:
       - assets/login_logo.png
+      - assets/kakao_icon.png
+      - assets/frooto_logo.png
 
   fonts:
     - family: WorkSansSemiBold
