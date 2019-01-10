@@ -4,11 +4,11 @@ import 'GradientAppBar.dart';
 import 'HomePageBody.dart';
 
 class HomePage extends StatelessWidget {
-  final List<HomePageBody> _cards = <HomePageBody>[];
+  final List<StatelessWidget> _cards = <StatelessWidget>[];
 
   @override
   Widget build(BuildContext context) {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 10; i++) {
       _cards.insert(0, new HomePageBody());
     }
 
@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               itemBuilder: (_, int index) => _cards[index],
               itemCount: _cards.length,
             ),
-          )
+          ),
         ],
       ),
     );
