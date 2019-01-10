@@ -7,12 +7,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'TheGorgeousLogin',
-      theme: new ThemeData(
-
-        primarySwatch: Colors.blue,
-      ),
-      home: new LoginPage(),
-    );
+        title: 'Frooto',
+        theme: new ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => new LoginPage(),
+          '/home': (context) => new Container(),
+        });
   }
 }
